@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Building the application..."
+
+  post_build:
+    commands:
+      - echo "Deploy to S3"
+      - echo "Deploying the application..."
+
+artifacts:
+  files:
+    - '**/*'
+
